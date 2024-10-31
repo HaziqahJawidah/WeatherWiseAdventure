@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WeatherWise Adventures</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo" id="logo">
+    <h2 id="h_greet">Welcome to WeatherWise Adventures</h2>
+  </header>
+
+  <main>
+    <h1>Weather-Based Activity Suggestions</h1>
+    <p>Welcome to your weather-based adventure planner!</p>
+
+    <label>Enter the city you're going to:</label><br><br>
+    <input type="text" id="city_input" placeholder="Enter City"><br><br>
+    <button onclick="Clicked()">Enter</button>
+
+    <div id="weatherInfo">
+      <div id="iconContainer">
+        <img id="icon" alt="" />
+      </div>
+      <div id="location"></div>
+      <div id="localtime"></div>
+      <div id="temperature"></div>
+      <div id="condition"></div>
+      <div id="wind"></div>
+      <div id="humidity"></div>
+      <div id="rainchance"></div>
+      <div id="snowchance"></div>
+      <div id="warningMessage"></div>
+    </div>
+
+    <div id="activityChecklist">
+      <h3>Suggested Activities</h3>
+      <div id="activityContainer"></div> <!-- Container for activity images -->
+    </div>
+    
+    <div>
+      <a href="crud.html">Manage Activities</a>
+    </div><br><br>
+  </main>
+
+  <script src="weather_main.js"></script>
+</body>
+</html>

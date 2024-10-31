@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Manage Activities</title>
+  <link rel="stylesheet" href="crud.css" />
+</head>
+<body>
+  <header>
+      <img src="logo.png" alt="Logo" id="logo">
+      <h2 id="h_greet">WeatherWise Adventures</h2>
+  </header>
+
+  <h1>Manage Outdoor Activities</h1>
+
+  <!-- Activity Dropdown -->
+  <label for="activityDropdown">Select Activity:</label>
+  <select id="activityDropdown">
+    <option value="">------------------------------ Choose an activity ------------------------------</option>
+    <option value="beach-volleyball">Beach Volleyball</option>
+    <option value="camping">Camping</option>
+    <option value="hiking">Hiking</option>
+    <option value="kite-surfing">Kite Surfing</option>
+    <option value="paragliding">Paragliding</option>
+    <option value="picnic">Picnic</option>
+    <option value="skiing">Skiing</option>
+    <option value="snowboarding">Snowboarding</option>
+    <option value="stargazing">Stargazing</option>
+    <option value="surfing">Surfing</option>
+  </select>
+
+  <label for="equipmentList">Equipment List (comma-separated):</label>
+  <input type="text" id="equipmentList" placeholder="Enter equipment" />
+
+  <label for="activityDescription">Activity Description:</label>
+  <textarea id="activityDescription" placeholder="Enter description"></textarea>
+
+  <div class="buttons">
+    <button onclick="createActivity()">Create</button>
+    <button onclick="readActivity()">Read</button>
+    <button onclick="updateActivity()">Update</button>
+    <button onclick="deleteActivity()">Delete</button>
+  </div>
+
+  <div id="output"></div>
+
+  <div>
+    <a href="index.html">Back to Homepage</a>
+  </div>
+  <br>
+
+  <script src="crud.js"></script>
+</body>
+</html>
